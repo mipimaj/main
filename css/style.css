@@ -21,7 +21,7 @@ body{
 header{
    width: 100%;
    height: 80px;
-   background: #20ada6;
+   background: rgb(0, 125, 193, 1);
    display: flex;
    justify-content: center;
    align-items: center;
@@ -33,14 +33,15 @@ header{
    height: 100%;
    display: flex;
    align-items: center;
+   justify-content: center;
 }
 
 /* wave */
 
 .wave-container {  
    z-index: -1;
-   height: 50vh;
-   background-color: #20B2AA;
+   height: 30vh;
+   background-color: #0087ce;
    position: relative;
    display: flex;
    justify-content: center;
@@ -72,6 +73,11 @@ header{
  }
 
 /* corps de la page */
+
+.box-presentation-width{
+   width: 80%;
+   height: 80%;
+}
 
 .flex-box-presentation{
    display: flex;
@@ -114,6 +120,8 @@ header{
    justify-content: center;
 }
 
+.text-justify{text-align:justify !important;}
+
 .div80{
    width: 80%;
    height: 80%;
@@ -122,14 +130,15 @@ header{
 .box-nous{
    width: 100%;
    height: max-content;
+   background-color: #e9ecf5;
+   padding: 60px;
    /* background-color: red; */
    margin-top: 20px;
 }
 
 footer{
    width: 100%;
-   background-color: #20B2AA;
-   margin-top: 20px;
+   background-color: #1e2024;
 }
 
 .card-blur{
@@ -139,8 +148,18 @@ footer{
    backdrop-filter: blur(15px);
 }
 
-.text-vw-1{
-   font-size: 1vw;
+.sous-box-nous{
+   width: 75%;
+}
+
+.card-presentation{
+   min-width: 250px;
+   max-width: 250px;
+   min-height: 125.6px;
+   background-color: white;
+   box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+ 
+   backdrop-filter: blur(15px);
 }
 
 .text-vw-2{
@@ -156,6 +175,10 @@ footer{
 }
 
 @media screen and (max-width: 1200px) {
+   .title{
+      margin-bottom: 30px;
+      color: white;
+    }
    .flex-box-presentation{
       flex-direction: row;
       height: max-content;
@@ -176,5 +199,12 @@ footer{
       min-width: 95%;
       min-height: 320px;
       /* background-color: peru; */
+   }
+   .sous-box-nous{
+      width: 100%;
+   }
+   .box-presentation-width{
+      width: 94%;
+      height: 80%;
    }
 }
