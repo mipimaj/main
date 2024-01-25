@@ -133,7 +133,7 @@ header{
    width: 100%;
    height: max-content;
    background-color: #e9ecf5;
-   padding: 80px;
+   padding: 80px 20px;
    /* background-color: red; */
    margin-top: 20px;
 }
@@ -183,7 +183,7 @@ footer{
    flex-direction: column;
    align-items: center;
    width: 100%;
-   padding: 80px;
+   padding: 80px 30px;
 }
 
 .presentation-config-pc{
@@ -196,9 +196,9 @@ footer{
 
 .box-config{
    min-width: 300px;
-   min-height: 500px;
+   min-height: 600px;
    max-width: 300px;
-   max-height: 500px;
+   max-height: 600px;
    border-radius: 25px;
    margin-top: 80px;
    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
@@ -221,7 +221,19 @@ footer{
 
 .config-pc-img{
    width: 35px;
+   pointer-events: none;
+   user-select: none;
    margin: 3px 10px 0px 0px;
+}
+
+.bouton-config-pc{
+   /* couleur pour les boutons #1e2024 */
+   background-color: blueviolet;
+   margin: 10px;
+   padding: 10px;
+   border-radius: 10px;
+   color: white;
+   text-decoration: none;
 }
 
 /* Fin configuration pc */
