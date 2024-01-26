@@ -207,6 +207,12 @@ footer{
    padding: 20px;
 }
 
+.config-pc-text{
+   font-size: 14px;
+   color:darkmagenta;
+   
+}
+
 .config-petite{
    
 }
@@ -220,6 +226,7 @@ footer{
 }
 
 .config-pc-img{
+   margin-top: -100px;
    width: 35px;
    pointer-events: none;
    user-select: none;
