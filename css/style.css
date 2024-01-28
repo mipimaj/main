@@ -5,6 +5,7 @@
 
 *{
    scroll-behavior: smooth;
+   scroll-behavior: smooth;
    border: 0;
    box-sizing: border-box;
    margin: 0;
@@ -33,7 +34,7 @@ header{
    height: 100%;
    display: flex;
    align-items: center;
-   justify-content: center;
+   justify-content:space-between;
 }
 
 /* wave */
@@ -71,6 +72,19 @@ header{
    margin-bottom: 100px;
    color: white;
  }
+
+/* Menu du header */
+
+.header-menu{
+   width: max-content;
+   display: flex;
+   justify-content: end;
+}
+
+.header-menu a{
+   color: white;
+   padding-right: 20px;
+}
 
 /* corps de la page */
 
@@ -250,6 +264,12 @@ footer{
       margin-bottom: 30px;
       color: white;
     }
+    .box-header{
+      justify-content: center;
+    }
+   .header-menu{
+      display: none;
+   }
    .flex-box-presentation{
       flex-direction: row;
       height: max-content;

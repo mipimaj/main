@@ -5,6 +5,7 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/navbar.css">
    <title>Monter un pc pour...</title>
 </head>
 <body>
@@ -12,7 +13,29 @@
    <header>
       <div class="box-header">
          <h2 class="text-white">MIPIMAJ</h2>
+         <div class="header-menu">
+            <a href="#monter-son-pc">Monter son pc</a>
+            <a href="#nous">Présentation</a>
+            <a href="#config"> Configuration</a>
+         </div>
       </div>
+     </div>
+    </div>
+
+    <input type="checkbox" id="active">
+    <label for="active" class="menu-btn">
+      <span class="line line1"> </span>
+      <span class="line line2"> </span>
+      <span class="line line3"> </span>
+    </label>
+    <div class="wrapper">
+      <ul>
+         <li><a href="#">Home</a></li>
+         <li><a href="#">About</a></li>
+         <li><a href="#">Services</a></li>
+         <li><a href="#">Gallery</a></li>
+         <li><a href="#">Feedback</a></li>
+      </ul>
    </header>
 
    <div class="wave-container"><h1 class="title">Monter un Pc pour les ....</h1></div>
@@ -21,7 +44,7 @@
 
    <div class="flex-box-presentation">
       
-      <div class="flex-box-presentation-gauche center">
+      <div id="presentation" class="flex-box-presentation-gauche center">
          <div class="d-flex flex-column justify-content-center bow box-presentation-width">
             <h2 class="p-3">Présentation du site</h3>
             <p class="p-3 text-vw-1 text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacus laoreet non curabitur gravida arcu. Nibh venenatis cras sed felis eget velit aliquet sagittis. Quam nulla porttitor massa id neque aliquam vestibulum. Id porta nibh venenatis cras. Pellentesque dignissim enim sit amet venenatis urna. Egestas diam in arcu cursus. Adipiscing bibendum est ultricies integer quis auctor. Non arcu risus quis varius. Tortor condimentum lacinia quis vel eros donec ac. Ut porttitor leo a diam sollicitudin tempor id eu nisl. Nisl purus in mollis nunc sed. Risus in hendrerit gravida rutrum quisque non. Vitae purus faucibus ornare suspendisse sed nisi lacus sed viverra.</p>
@@ -30,7 +53,7 @@
 
       <!-- Section apprendre a monter son pc -->
 
-      <div class="flex-box-presentation-droit-haut center">
+      <div id="monter-son-pc" class="flex-box-presentation-droit-haut center">
          <div class="card-blur rounded rounded-5 box-presentation-width">
             <h3 class="text-center mt-4">Apprenez à monter votre pc sans avoir de connaissance !</h3>
          </div>
@@ -47,7 +70,7 @@
 
    <!-- Section qui somme nous -->
 
-   <div class="box-nous centerY">
+   <div id="nous" class="box-nous centerY">
       <h2 class="mb-5">Qui somme nous ?</h2>
       <div class="h-auto center justify-content-around flex-wrap sous-box-nous">
          <div class="centerY p-3 rounded-4 mt-3 card-presentation">
@@ -75,7 +98,7 @@
 
    <!-- Section configuration pc -->
 
-   <div class="box-config-pc">
+   <div id="config" class="box-config-pc">
       <h2 class="text-center text-justify">Vous ne savez pas quelle configuration choisir ? Nous sommes là pour vous</h2>
       <p style="color: brown;" class="mt-4 text-justify">Nous vous proposons les configurations avec les meilleurs rapports qualité-prix (les prix peuvent varier au moment où nous les avons faite)</p>
       <div class="presentation-config-pc">
