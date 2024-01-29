@@ -1,0 +1,35 @@
+.flex-box-section{
+   display: flex;
+   flex-wrap: wrap;
+   min-height: 1000px;
+}
+
+.box-sommaire{
+   flex: 1 0 30%;
+   min-height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.box-page{
+   flex: 1 0 70%;
+   min-height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.sommaire{
+   width: 90%;
+   height: 90%;
+   border-radius: 30px;
+   background-color: rgb(17, 17, 17, 0.85);
+}
+
+.page{
+   width: 90%;
+   height: 90%;
+   border-radius: 30px;
+   background-color: rgb(17, 17, 17, 0.85);
+}
