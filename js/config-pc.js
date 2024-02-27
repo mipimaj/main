@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
      .then(response => response.json())
      .then(data => {
       let ids = ['petite-config-carte-graphique', 'petite-config-processeur', 'petite-config-carte-mere', 'petite-config-ram', 'petite-config-ssd', 'petite-config-alimentation', 'petite-config-boitier-pc', 'petite-config-refroidissement', 'petite-config-prix'];
+      let lien = document.getElementById('petite-config-lien');
 
       ids.forEach(id => {
         let element = document.getElementById(id);
@@ -23,6 +24,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         let textNode = document.createTextNode(data["petite-config"][id]);
         element.appendChild(textNode);
       });
+      lien.href = data["petite-config"]["petite-config-lien"];
      })
      .catch(error => console.error('Erreur:', error));
 
@@ -32,6 +34,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
      .then(response => response.json())
      .then(data => {
       let ids = ['moyenne-config-carte-graphique', 'moyenne-config-processeur', 'moyenne-config-carte-mere', 'moyenne-config-ram', 'moyenne-config-ssd', 'moyenne-config-alimentation', 'moyenne-config-boitier-pc', 'moyenne-config-refroidissement', 'moyenne-config-prix'];
+      let lien = document.getElementById('moyenne-config-lien');
 
       ids.forEach(id => {
         let element = document.getElementById(id);
@@ -48,6 +51,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         let textNode = document.createTextNode(data["moyenne-config"][id]);
         element.appendChild(textNode);
       });
+      lien.href = data["moyenne-config"]["moyenne-config-lien"];
      })
      .catch(error => console.error('Erreur:', error));
 
@@ -57,6 +61,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
      .then(response => response.json())
      .then(data => {
       let ids = ['grande-config-carte-graphique', 'grande-config-processeur', 'grande-config-carte-mere', 'grande-config-ram', 'grande-config-ssd', 'grande-config-alimentation', 'grande-config-boitier-pc', 'grande-config-refroidissement', 'grande-config-prix'];
+      let lien = document.getElementById('grande-config-lien');
 
       ids.forEach(id => {
         let element = document.getElementById(id);
@@ -73,6 +78,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         let textNode = document.createTextNode(data["grande-config"][id]);
         element.appendChild(textNode);
       });
+      lien.href = data["grande-config"]["grande-config-lien"];
      })
      .catch(error => console.error('Erreur:', error));
  });

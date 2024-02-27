@@ -15,6 +15,8 @@
 
 body{
    background-color: #fff5ee;
+   overflow-x: hidden;
+   width: 100%;
 }
 
 /* navbar */
@@ -214,6 +216,7 @@ footer{
    align-items: center;
    width: 100%;
    padding: 80px 25px;
+   overflow: hidden;
 }
 
 .presentation-config-pc{
