@@ -1,11 +1,11 @@
 .flex-box-section{
    display: flex;
    flex-wrap: wrap;
-   min-height: 1000px;
+   min-height: 91vh;
 }
 
 .box-sommaire{
-   flex: 1 0 30%;
+   flex: 1 0 25%;
    min-height: 100%;
    display: flex;
    justify-content: center;
@@ -13,7 +13,7 @@
 }
 
 .box-page{
-   flex: 1 0 70%;
+   flex: 1 0 75%;
    min-height: 100%;
    display: flex;
    justify-content: center;
@@ -21,15 +21,88 @@
 }
 
 .sommaire{
+   padding: 40px;
    width: 90%;
-   height: 90%;
+   min-height: 85vh;
+   max-height: 85vh;
+   border-top-left-radius: 30px;
+   border-bottom-left-radius: 30px;
+   background-color: #e9ecf5;
+   overflow-x: hidden;
+   overflow-y: auto;
+   word-break: break-all;
+   scrollbar-color: #fff #343231;
+   scrollbar-width: thin;
+   box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.5);
+}
+
+.sommaire::-webkit-scrollbar {
+   width: 10px;
+}
+
+.sommaire::-webkit-scrollbar-track {
+   background: #343231;
+}
+
+.sommaire::-webkit-scrollbar-thumb {
+   background: #fff;
    border-radius: 30px;
-   background-color: rgb(17, 17, 17, 0.85);
 }
 
 .page{
    width: 90%;
-   height: 90%;
-   border-radius: 30px;
-   background-color: rgb(17, 17, 17, 0.85);
+   max-height: 91.3vh;
+   /* background-color: rgb(17, 17, 17, 0.85); */
+   overflow-x: hidden;
+   overflow-y: auto;
+   overflow-y: visible;
+   word-break: break-all;
+   scrollbar-color: #fff5ee #fff5ee;
+   scrollbar-width: thin;
+   padding: 40px;
+}
+
+.page h4, p{
+   padding-left: 20px;
+   padding-right: 20px;
+}
+
+.page h4{
+   padding-top: 20px;
+}
+
+.page p{
+   padding-bottom: 20px;
+   text-align: justify;
+   overflow-wrap: break-word;
+   word-wrap: break-word;
+   hyphens: auto;
+}
+
+.highlight {
+   background-color: #D3D3D3;
+   height: 110%;
+   border-radius: 20px;
+   transition: background-color 0.5s ease-in-out;
+}
+
+.next-button{
+   margin-top: 50px;
+   justify-content: center;
+   gap: 50px;
+   display: flex;
+}
+
+.before{
+   min-width: 75px;
+   min-height: 75px;
+   border-radius: 100%;
+   background-color: red;
+}
+
+.next{
+   min-width: 75px;
+   min-height: 75px;
+   border-radius: 100%;
+   background-color: blue;
 }
