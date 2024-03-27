@@ -1,7 +1,30 @@
+header{
+   height: 12vh;
+}
+
 .flex-box-section{
    display: flex;
    flex-wrap: wrap;
    min-height: 91vh;
+}
+
+.wrapper ul{
+   justify-content: end;
+}
+
+.wrapper ul div{
+   justify-content: end;
+}
+
+.menu-scroll{
+   overflow-x: hidden;
+   overflow-y: auto;
+   overflow-y: visible;
+   height: 65%;
+}
+
+.menu-scroll div li a{
+   font-size: 22px;
 }
 
 .box-sommaire{
@@ -105,4 +128,21 @@
    min-height: 75px;
    border-radius: 100%;
    background-color: blue;
+}
+
+@media screen and (max-width: 1200px) {
+   .box-sommaire{
+      display: none;
+   }
+   .box-page h4, p{
+      padding-left: 0px;
+      padding-right: 0px;
+   }
+   .flex-box-section{
+      min-height: 88vh;
+   }
+   .page{
+      width: 100%;
+      max-height: 88vh;
+   }
 }

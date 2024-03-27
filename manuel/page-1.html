@@ -4,6 +4,7 @@
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="/css/navbar.css">
    <link rel="stylesheet" href="/css/style.css">
    <link rel="stylesheet" href="/css/page.css">
    <title>Monter un pc pour...</title>
@@ -12,10 +13,38 @@
    <!-- haut de page -->
    <header>
       <div class="box-header">
-         <a class="text-decoration-none" href="/index.html"><h2 class="text-white">MIPIMAJ</h2></a>
+         <a href="/index.html"><h2 class="text-white">MIPIMAJ</h2></a>
+         <div class="header-menu">
+            <a href="#monter-son-pc">Monter son pc</a>
+            <a href="#nous">Présentation</a>
+            <a href="#config"> Configuration</a>
+         </div>
       </div>
-     </div>
-    </div>
+   </div>
+
+   <input type="checkbox" id="active">
+   <label for="active" class="menu-btn">
+      <span class="line line1"> </span>
+      <span class="line line2"> </span>
+      <span class="line line3"> </span>
+   </label>
+   <div class="wrapper">
+      <ul>
+         <li><a href="/index.html">Acceuil</a></li>
+         <li style="margin-top: 40px;"><h2>Information Utile</h2></li>
+         <div class="menu-scroll">
+            <div style="display: flex;flex-direction: column;">
+               <li><a href="#cpu">Processeur</a></li>
+               <li><a href="#ram">Ram</a></li>
+               <li><a href="#cm">Carte mère</a></li>
+               <li><a href="#psu">Alimentation</a></li>
+               <li><a href="#ventirad">Ventirad / watercooling</a></li>
+               <li><a href="#stockage">stockage</a></li>
+               <li><a href="#cg">Carte Graphique</a></li>
+               <li><a href="#boitier">Boitier</a></li>
+            </div>
+         </div>
+      </ul>
    </header>
 
    <section class="flex-box-section">
@@ -85,6 +114,7 @@
    </section>
 
    <script src="/js/animation.js"></script>
+   <script src="/js/navbar.js"></script>
 
 </body>
 </html>
