@@ -41,6 +41,20 @@ header{
    justify-content:space-between;
 }
 
+.monter-son-pc-container{
+   background: linear-gradient(
+      to bottom,
+      rgba(0,0,0,0.7),
+      rgba(0,0,0,0)
+   ), url(/img/landscape.jpg);
+   width: 100vw;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 50px;
+}
+
 /* wave */
 
 .wave-container {  
@@ -73,8 +87,8 @@ header{
  }
 
  .title{
-   margin-bottom: 100px;
    color: white;
+   font-size: clamp(1.5625rem, -0.2344rem + 5.75vw, 3rem);
  }
 
 /* Menu du header */
