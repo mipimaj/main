@@ -172,8 +172,30 @@ header{
 }
 
 footer{
+   justify-content: center;
+   align-items: center;
+   display: flex;
    width: 100%;
    background-color: #1e2024;
+   gap: 20px;
+}
+
+.foot-div{
+   display: flex;
+   gap: 100px;
+   padding: 30px;
+   justify-content: center;
+   align-items: center;
+}
+
+footer > div > div > h5{
+   padding-bottom: 10px;
+}
+
+.nos-reseaux{
+   justify-content: center;
+   display: flex;
+   gap: 20px;
 }
 
 .box-monter-son-pc{
@@ -337,5 +359,15 @@ footer{
    }
    .presentation-config-pc{
       width: 100%;
+   }
+   .foot-div{
+      flex-direction: column;
+      gap: 30px;
+   }
+   footer > div > div > h5{
+      padding-bottom: 10px;
+   }
+   .nos-reseaux-text{
+      text-align: center;
    }
 }

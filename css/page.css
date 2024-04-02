@@ -114,6 +114,7 @@
 .page h4{
    padding-top: 20px;
    display: inline-block;
+   word-break: break-word;
 }
 
 .page p{
@@ -159,8 +160,8 @@
       display: none;
    }
    .box-page h4, p{
-      padding-left: 0px;
-      padding-right: 0px;
+      padding-left: 30px;
+      padding-right: 30px;
    }
    .flex-box-section{
       min-height: 88vh;
@@ -168,5 +169,9 @@
    .page{
       width: 100%;
       max-height: 88vh;
+      padding: 0px;
+   }
+   .highlight{
+      border-radius: 0px;
    }
 }
