@@ -131,9 +131,9 @@ header{
    overflow-x: hidden;
    /* background-color: green; */
 }
-.flex-box-presentation-droit-haut div{
+/* .flex-box-presentation-droit-haut div{
    max-height: 320px;
-}
+} */
 
 .flex-box-presentation-droit-bas{
    width: 50%;
@@ -286,6 +286,10 @@ footer > div > div > h5{
    
 }
 
+#rejoindre-discord{
+   display: none;
+}
+
 .config-petite{
    
 }
@@ -369,5 +373,14 @@ footer > div > div > h5{
    }
    .nos-reseaux-text{
       text-align: center;
+   }
+   #iframediscord{
+      display: none;
+   }
+   #besoin-h2{
+      padding-top: 0px;
+   }
+   #rejoindre-discord{
+      display: flex;
    }
 }
