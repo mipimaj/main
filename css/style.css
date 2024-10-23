@@ -41,17 +41,20 @@ header{
 }
 
 .monter-son-pc-container{
-   background: linear-gradient(
-      to bottom,
-      rgba(0,0,0,0.7),
-      rgba(0,0,0,0)
-   ), url(/img/landscape.webp);
+   padding-top: 80px;
+   background-color: #1e2024;
    width: 100vw;
    height: 100vh;
    display: flex;
+   flex-wrap: wrap;
    justify-content: center;
    align-items: center;
    margin-bottom: 50px;
+   gap: 50px;
+}
+
+.monter-son-pc-container img{
+   width: 50%;
 }
 
 /* wave */
@@ -112,6 +115,7 @@ header{
 }
 
 .flex-box-presentation{
+   padding-top: 80px;
    display: flex;
    flex-wrap: wrap;
    flex-direction: column;
@@ -156,6 +160,7 @@ header{
 }
 
 .text-justify{text-align:justify !important;}
+.bg-button{background-color: #007dc1 !important;}
 
 .div80{
    width: 80%;
@@ -324,7 +329,6 @@ footer > div > div > h5{
 
 @media screen and (max-width: 1200px) {
    .title{
-      margin-bottom: 30px;
       color: white;
     }
     .box-header{
@@ -333,7 +337,14 @@ footer > div > div > h5{
    .header-menu{
       display: none;
    }
+   .monter-son-pc-container{
+      gap: 0px;
+   }
+   .monter-son-pc-container img{
+      width: 60%;
+   }
    .flex-box-presentation{
+      padding-top: 120px;
       flex-direction: row;
       height: max-content;
    }
